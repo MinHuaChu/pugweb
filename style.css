@@ -6,7 +6,30 @@
 
 #banner{
     background-image: url(image/161229_Banner_001.jpg);
-    background-size: cover;
+    background-size: 100vw;
+    background-repeat: no-repeat;
     width: 100vw;
-    height: 600px;
+    height: 900px;
+}
+
+#logo{
+    width: 300px;
+}
+
+#link{
+    float: right;
+    padding: 40px 0;
+}
+
+#link a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: 800;
+}
+
+nav{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
 }
