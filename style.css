@@ -5,12 +5,18 @@
     border: 0px solid #000;
 }
 
+body{
+    background-color: #faf7f0;
+}
+
 #banner{
-    background-image: url(image/161229_Banner_001.jpg);
+    background-image: url(image/bg.png);
     background-size: 100vw;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 900px;
+    /* calc 計算數字加減乘除都可 */
+    height: calc(100vw/2.1);
+
 }
 
 #logo{
@@ -40,3 +46,39 @@ nav{
     margin: 0 auto;
     padding: 50px 0;
 }
+
+/* 品牌區塊 */
+#brands{
+    text-align: center;
+    color: #79644d;
+}
+
+#brands p{
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 2;
+    /* 透明度 0~1 */
+    opacity: 0.6;
+    /* 字距 */
+    letter-spacing: 6px;
+
+}
+
+.title{
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+
+.title::before{
+    content: " / ";
+    padding-right: 20px;
+}
+
+.title::after{
+    content: " / ";
+    padding-left: 20px;
+}
+
+
+
