@@ -7,6 +7,7 @@
 
 body{
     background-color: #faf7f0;
+    text-align: center;
 }
 
 #banner{
@@ -19,23 +20,23 @@ body{
 
 }
 
-#logo{
+.logo{
     width: 300px;
 }
 
-#link{
+.link{
     float: right;
     padding: 40px 0;
 }
 
-#link a{
+.link a{
     color: white;
     text-decoration: none;
     padding: 5px 15px;
     font-weight: 800;
 }
 
-#link a:hover{
+.link a:hover{
     background-color: #ffe147;
     color: #000;
     transition: 0.6s;
@@ -77,14 +78,92 @@ nav{
 
 /* 偽元素 */
 .title::before{
-    content: " / ";
+    content: "＼";
     padding-right: 20px;
 }
 /* 偽元素 */
 .title::after{
-    content: " / ";
+    content: "/";
     padding-left: 20px;
 }
 
+/* 產品區塊 */
+#product{
+    /* 顯示模式：格線 */
+    display: grid;
+    /* 格線-框架-欄位：：欄位尺寸 欄位尺寸 欄位尺寸 */
+    grid-template-columns: auto auto auto;
+    /* 格線-間隙 */
+    grid-gap: 20px;
+    padding: 30px;
+    width: 920px;
+    margin: 0 auto;
+}
 
+#product img {
+    width: 100%;
+}
 
+.product-box h2{
+    color: #fbab13;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.product-box a{
+    text-decoration: none;
+}
+
+.product-box hr{
+    height: 2px;
+    background-color: #bdac90;
+    border: 0;
+    margin: 20px 0;
+}
+
+.product-box p{
+    font-size: 0.8em;
+    color: #58451a;
+    padding: 10px 0;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.btn-big{
+    display: inline-block;
+    background-color: #642220;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 100px;
+    border: 2px solid #642220;
+    font-weight: 900;
+    transition: 0.8s;
+    text-align: center;
+   
+}
+
+.btn-big:hover{
+    background-color: transparent;
+    color: #642220;
+}
+
+.small-line{
+    background-image: url(image/small-line.png);
+    height: 5px;
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+footer{
+    background-color: #642220;
+    color: #fff;
+    margin-top: 100px;
+}
+
+footer #copy{
+    padding-top: 50px;
+    font-size: 0.5em;
+    text-align: center;
+}
