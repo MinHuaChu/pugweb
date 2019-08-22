@@ -17,6 +17,7 @@ body{
     width: 100vw;
     /* calc 計算數字加減乘除都可 */
     height: calc(100vw/2.1);
+    text-align: left;
 
 }
 
@@ -92,7 +93,7 @@ nav{
     /* 顯示模式：格線 */
     display: grid;
     /* 格線-框架-欄位：：欄位尺寸 欄位尺寸 欄位尺寸 */
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     /* 格線-間隙 */
     grid-gap: 20px;
     padding: 30px;
@@ -166,4 +167,37 @@ footer #copy{
     padding-top: 50px;
     font-size: 0.5em;
     text-align: center;
+}
+
+/* RWD */
+
+/* 當螢幕寬度大於等於 1024 像素 - 桌機 */
+@media screen and (min-width: 1024px) {
+  
+}
+
+/* 當螢幕寬度小於等於 1023 像素 - 平板 */
+@media screen and (max-width: 1023px) {
+    #product{
+        grid-template-columns: 1fr 1fr;
+        width:100%;
+    }
+}
+
+/* 當螢幕寬度小於等於 767 像素 - 手機 */
+@media screen and (max-width: 767px) {
+    #product{
+        grid-template-columns: 1fr;
+        width:100%;
+    }
+    #brands{
+        width:100%;
+    }
+    #brands p{
+        width:100%;
+    }
+    /* 裡面的第一層元素 */
+    #brands > img{
+        width:100%;
+    }
 }
