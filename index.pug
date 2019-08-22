@@ -23,13 +23,9 @@ html(lang="zh")
         link(rel="stylesheet", href="style.css")
         link(rel="shortcut icon", href="image/icon.png", type="image/x-icon")
     body
-        div(id="banner")
-            nav
-                img(src="image/LOGO.png",alt="貍小路 LOGO",class="logo")
-                div(class="link")
-                    a(href="#") 最新消息
-                    a(href="#") 產品介紹
-                    a(href="#") 聯絡我們
+    
+        include nav.pug
+
         //-貍小路的堅持
         section(id="brands")
         
@@ -55,14 +51,6 @@ html(lang="zh")
 
         +title("CONTANT","聯絡我們")
 
-        footer
-            nav
-                img(src="image/LOGO.png",alt="貍小路 LOGO",class="logo")
-                div(class="link")
-                    a(href="#") 最新消息
-                    a(href="#") 產品介紹
-                    a(href="#") 聯絡我們
-                div(id="copy") copyright &copy; 2019 貍小路 all rights reserved
-        
+        include footer.pug
         
         
